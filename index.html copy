@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,13 +6,9 @@
   </head>
   <body>
     <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      <a-assets>
-	<a-asset-item id="glassesModel" src="https://cdn.glitch.global/a3b86c7d-6094-4ddc-a270-03fa31bf1b4b/scene.gltf?v=1677491458371"></a-asset-item>
-      </a-assets>
-
       <a-camera active="false" position="0 0 0"></a-camera>
-      <a-entity mindar-face-target="anchorIndex: 168">
-	<a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.01 0.01 0.01" src="#glassesModel"></a-gltf-model>
+      <a-entity mindar-face-target="anchorIndex: 1">
+	<a-sphere color="green" radius="0.1"></a-sphere>
       </a-entity>
     </a-scene>
   </body>
